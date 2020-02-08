@@ -1,0 +1,233 @@
+.bg-color-blue:before {
+	background: #0FACF3;
+	content: '';
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    right: 50%;
+    bottom: 50px;
+    z-index: -1;
+}
+
+.navbar-nav
+{
+    display: flex;
+}
+.nav-item
+{
+    list-style: none;
+    /* transform: translateX(100rem); */
+
+    animation:slideIn .5s forwards;
+}
+
+.nav-link
+{
+    /*padding: 1rem 0;*/
+    margin:  0 2rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+.nav-link:last.child{
+    margin-right: 0
+}
+.nav-link::before,
+.nav-link::after
+{
+    content: " ";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: yellow;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s; 
+
+}
+.nav-link::before
+{
+    top: 0;
+    transform-origin: left;
+}
+.nav-link::after
+{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after
+{
+    transform: scaleX(1);
+   
+}
+@keyframes slideIn()
+{
+    form{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.text-gray {
+	color: #999999;
+}
+
+.text-blue {
+	color: #0FACF3;
+}
+
+.blue-underline-50px:after {
+	background: #0FACF3;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+.blue-underline-30px:after {
+	background: #0FACF3;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 5px;	
+}
+
+.fa {
+	font-size: 30px;
+}
+
+.border-left-blue {
+	border-left: 5px solid #0FACF3;
+	padding-left: 15px;
+}
+
+.how-our-product-txt, .our-core-lorem {
+	font-size: 15px;
+}
+
+.how-our-product-txt:after {
+	background: #f3e10f;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 5px;
+}
+
+.fs-12px {
+	font-size: 12px;
+}
+
+.fa-jumbotron {
+	font-size: 35px;
+}
+
+.text-dark-gray {
+	color: #696868;
+}
+
+.fa-check {
+	font-size: 11px;
+}
+
+.stakeholder-table {
+	padding: 0px 40px 30px 100px;
+}
+
+.td-txt {
+	font-size: 13px;
+	color: #999999;
+}
+
+.bg-image {
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #00000085;
+}
+
+.left {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.left-2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;   
+}
+
+.h1-font {
+    font-size: 40px;
+}
+
+.txt-kuwy-logo {
+    font-size: 50px;
+}
+
+.btn-transperent {
+    background: #00000029;
+}
+
+.input-select, .input-text {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-red {
+    background: transparent;
+    padding: 10px 20px;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 100;
+    -webkit-transform: translate3d(0, 0, 0);
+    background-color: #000000;
+}
+
+.a-fa {
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.a-fa:hover {
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    border: 1px solid #0FACF3;
+}
+
+.a-fa > i.fa {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.a-fa:hoverS > i.fa:hover {
+    color: #0FACF3;
+}
